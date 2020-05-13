@@ -7,9 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		18186EA5246BA0CF00F5F546 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18186EA4246BA0CF00F5F546 /* LoginViewController.swift */; };
+		18186EA7246BA0E000F5F546 /* FeedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18186EA6246BA0E000F5F546 /* FeedViewController.swift */; };
+		18186EA9246BC34400F5F546 /* CameraViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18186EA8246BC34400F5F546 /* CameraViewController.swift */; };
 		185395C8246B6C8F00D79C40 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 185395C7246B6C8F00D79C40 /* AppDelegate.swift */; };
 		185395CA246B6C8F00D79C40 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 185395C9246B6C8F00D79C40 /* SceneDelegate.swift */; };
-		185395CC246B6C8F00D79C40 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 185395CB246B6C8F00D79C40 /* ViewController.swift */; };
 		185395CF246B6C8F00D79C40 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 185395CD246B6C8F00D79C40 /* Main.storyboard */; };
 		185395D1246B6C9600D79C40 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 185395D0246B6C9600D79C40 /* Assets.xcassets */; };
 		185395D4246B6C9600D79C40 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 185395D2246B6C9600D79C40 /* LaunchScreen.storyboard */; };
@@ -18,10 +20,12 @@
 
 /* Begin PBXFileReference section */
 		12125FBD0A101CAF09ECE837 /* Pods-Parstagram.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Parstagram.release.xcconfig"; path = "Target Support Files/Pods-Parstagram/Pods-Parstagram.release.xcconfig"; sourceTree = "<group>"; };
+		18186EA4246BA0CF00F5F546 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		18186EA6246BA0E000F5F546 /* FeedViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedViewController.swift; sourceTree = "<group>"; };
+		18186EA8246BC34400F5F546 /* CameraViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraViewController.swift; sourceTree = "<group>"; };
 		185395C4246B6C8F00D79C40 /* Parstagram.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Parstagram.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		185395C7246B6C8F00D79C40 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		185395C9246B6C8F00D79C40 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		185395CB246B6C8F00D79C40 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		185395CE246B6C8F00D79C40 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		185395D0246B6C9600D79C40 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		185395D3246B6C9600D79C40 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -54,7 +58,9 @@
 		18186EA3246B854C00F5F546 /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
-				185395CB246B6C8F00D79C40 /* ViewController.swift */,
+				18186EA4246BA0CF00F5F546 /* LoginViewController.swift */,
+				18186EA6246BA0E000F5F546 /* FeedViewController.swift */,
+				18186EA8246BC34400F5F546 /* CameraViewController.swift */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -222,8 +228,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				185395CC246B6C8F00D79C40 /* ViewController.swift in Sources */,
+				18186EA5246BA0CF00F5F546 /* LoginViewController.swift in Sources */,
+				18186EA9246BC34400F5F546 /* CameraViewController.swift in Sources */,
 				185395C8246B6C8F00D79C40 /* AppDelegate.swift in Sources */,
+				18186EA7246BA0E000F5F546 /* FeedViewController.swift in Sources */,
 				185395CA246B6C8F00D79C40 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
