@@ -101,9 +101,9 @@
                         <viewLayoutGuide key="safeArea" id="pOO-1d-Xwn"/>
                     </view>
                     <navigationItem key="navigationItem" id="ZgA-Tx-2sd">
-                        <barButtonItem key="rightBarButtonItem" title="Item" image="insta_camera_btn" id="v16-In-fl8">
+                        <barButtonItem key="rightBarButtonItem" title="Item" image="insta_camera_btn" id="JBV-xt-PA8">
                             <connections>
-                                <segue destination="hXt-Oz-IIw" kind="presentation" modalPresentationStyle="fullScreen" id="0aK-3Y-2wi"/>
+                                <segue destination="hXt-Oz-IIw" kind="presentation" modalPresentationStyle="fullScreen" id="I7h-TK-bnQ"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>
@@ -133,34 +133,50 @@
         <!--Camera View Controller-->
         <scene sceneID="fOV-y6-7gl">
             <objects>
-                <viewController id="hXt-Oz-IIw" customClass="CameraViewController" sceneMemberID="viewController">
+                <viewController id="hXt-Oz-IIw" customClass="CameraViewController" customModule="Parstagram" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="rOq-Re-q6s">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="image_placeholder" translatesAutoresizingMaskIntoConstraints="NO" id="wFF-Vu-sq8">
-                                <rect key="frame" x="16" y="20" width="334" height="248"/>
+                            <imageView clipsSubviews="YES" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="image_placeholder" translatesAutoresizingMaskIntoConstraints="NO" id="wFF-Vu-sq8">
+                                <rect key="frame" x="20" y="50" width="334" height="248"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <gestureRecognizers/>
+                                <connections>
+                                    <outletCollection property="gestureRecognizers" destination="zWU-w9-XwZ" appends="YES" id="e68-X0-Opy"/>
+                                </connections>
                             </imageView>
                             <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ebB-RE-UVF">
-                                <rect key="frame" x="16" y="276" width="334" height="34"/>
+                                <rect key="frame" x="20" y="306" width="334" height="34"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dDF-4q-PLY">
-                                <rect key="frame" x="16" y="318" width="334" height="30"/>
+                                <rect key="frame" x="20" y="348" width="334" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Submit"/>
+                                <connections>
+                                    <action selector="onSubmitButton:" destination="hXt-Oz-IIw" eventType="touchUpInside" id="m7b-Cf-N9P"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <viewLayoutGuide key="safeArea" id="Xgc-yI-HRm"/>
                     </view>
+                    <connections>
+                        <outlet property="commentField" destination="ebB-RE-UVF" id="Tv0-Pq-vMY"/>
+                        <outlet property="imageView" destination="wFF-Vu-sq8" id="J8y-ZJ-Foa"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="rIx-db-9Jw" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <tapGestureRecognizer id="zWU-w9-XwZ">
+                    <connections>
+                        <action selector="onCameraButton:" destination="hXt-Oz-IIw" id="7HX-2a-dao"/>
+                    </connections>
+                </tapGestureRecognizer>
             </objects>
-            <point key="canvasLocation" x="2133.5999999999999" y="129.98500749625188"/>
+            <point key="canvasLocation" x="2367" y="130"/>
         </scene>
     </scenes>
     <resources>
