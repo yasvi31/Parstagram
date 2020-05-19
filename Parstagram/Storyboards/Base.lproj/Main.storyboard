@@ -16,39 +16,39 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="instagram_logo" translatesAutoresizingMaskIntoConstraints="NO" id="Wm8-MS-1Ii">
-                                <rect key="frame" x="40" y="150" width="295" height="108"/>
+                                <rect key="frame" x="40" y="100" width="295" height="108"/>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Password" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="knq-4w-YcK">
-                                <rect key="frame" x="40" y="348" width="295" height="21"/>
+                                <rect key="frame" x="40" y="298" width="295" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="12c-jK-Ex1">
-                                <rect key="frame" x="40" y="299" width="295" height="34"/>
+                                <rect key="frame" x="40" y="249" width="295" height="34"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="1AX-rs-tXx">
-                                <rect key="frame" x="40" y="379" width="295" height="34"/>
+                                <rect key="frame" x="40" y="329" width="295" height="34"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
                             </textField>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Username" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mYl-l3-hxP">
-                                <rect key="frame" x="40" y="268" width="295" height="21"/>
+                                <rect key="frame" x="40" y="218" width="295" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="D3d-5P-Nvt">
-                                <rect key="frame" x="60" y="443" width="47" height="30"/>
+                                <rect key="frame" x="60" y="393" width="47" height="30"/>
                                 <state key="normal" title="Sign In"/>
                                 <connections>
                                     <action selector="onSignIn:" destination="BYZ-38-t0r" eventType="touchUpInside" id="yyA-dn-bGv"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aPe-o8-wdF">
-                                <rect key="frame" x="261" y="443" width="54" height="30"/>
+                                <rect key="frame" x="261" y="393" width="54" height="30"/>
                                 <state key="normal" title="Sign Up"/>
                                 <connections>
                                     <action selector="onSignUp:" destination="BYZ-38-t0r" eventType="touchUpInside" id="KUI-Ax-PFc"/>
@@ -72,7 +72,7 @@
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="1AX-rs-tXx" secondAttribute="trailing" constant="40" id="QF2-ZJ-hG8"/>
                             <constraint firstItem="mYl-l3-hxP" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="40" id="Qeq-c1-1tt"/>
                             <constraint firstItem="1AX-rs-tXx" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="40" id="UJg-ix-aOb"/>
-                            <constraint firstItem="Wm8-MS-1Ii" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="150" id="V9s-vl-abe"/>
+                            <constraint firstItem="Wm8-MS-1Ii" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="100" id="V9s-vl-abe"/>
                             <constraint firstItem="Wm8-MS-1Ii" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="WG5-BJ-7g8"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="12c-jK-Ex1" secondAttribute="trailing" constant="40" id="gPl-Am-H1b"/>
                             <constraint firstItem="D3d-5P-Nvt" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="60" id="r5B-3C-0G8"/>
